@@ -1,5 +1,6 @@
 module Starburst
 	class Announcement < ActiveRecord::Base
+		acts_as_hashids length: 18
 
 		validates :body, presence: true
 
